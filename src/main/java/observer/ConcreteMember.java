@@ -9,8 +9,7 @@ public class ConcreteMember implements Member {
 
     }
 
-
     public void update(UndoableStringBuilder usb) {
-
+        this.usb = usb;
     }
 }

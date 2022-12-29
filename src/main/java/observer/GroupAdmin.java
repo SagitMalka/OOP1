@@ -8,7 +8,6 @@ public class GroupAdmin implements Sender {
     private Member member;
     private UndoableStringBuilder usb = new UndoableStringBuilder();
 
-
     public void register(Member obj) {
         clients.add(obj);
     }
