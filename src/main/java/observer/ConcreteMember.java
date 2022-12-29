@@ -1,3 +1,5 @@
+package observer;
+
 public class ConcreteMember implements Member {
     private Member member;
     private UndoableStringBuilder usb;
