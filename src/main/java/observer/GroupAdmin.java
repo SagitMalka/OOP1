@@ -1,11 +1,16 @@
 package observer;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GroupAdmin implements Sender {
-    private List<Member> clients = new ArrayList<>();
+    private Set<Member> clients = new HashSet<>();
     private UndoableStringBuilder usb = new UndoableStringBuilder();
+
+    public Set<Member> getClients() {
+        return clients;
+    }
 
     public void register(Member member) {
         clients.add(member);
