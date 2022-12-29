@@ -5,26 +5,25 @@ import java.util.List;
 
 public class GroupAdmin implements Sender {
     private List<Member> clients = new ArrayList<>();
-    private Member member;
     private UndoableStringBuilder usb = new UndoableStringBuilder();
 
-    public void register(Member obj) {
-        clients.add(obj);
+    public void register(Member member) {
+        clients.add(member);
     }
 
-    public void unregister(Member obj) {
-        clients.remove(obj);
+    public void unregister(Member member) {
+        clients.remove(member);
     }
 
     //Inserts the string into this character sequence.
-    public void insert(int offset, String obj) {
-        this.usb.insert(offset, obj);
+    public void insert(int offset, String str) {
+        this.usb.insert(offset, str);
         updateAll();
     }
 
     // Appends the specified string to this character sequence.
-    public void append(String obj) {
-        this.usb.append(obj);
+    public void append(String str) {
+        this.usb.append(str);
         updateAll();
     }
 
