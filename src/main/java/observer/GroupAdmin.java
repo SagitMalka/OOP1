@@ -10,7 +10,7 @@ public class GroupAdmin implements Sender {
     private UndoableStringBuilder usb = new UndoableStringBuilder();
 
     public Set<Member> getClients() {
-        return clients;
+        return new HashSet<>(clients);
     }
 
     public void register(Member member) {
