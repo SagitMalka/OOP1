@@ -1,6 +1,7 @@
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.commons.logging.LoggerFactory;
+//import org.testng.annotations.Test;
 
 public class Tests {
     public static final Logger logger = LoggerFactory.getLogger(Tests.class);
