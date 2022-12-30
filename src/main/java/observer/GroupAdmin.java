@@ -34,7 +34,7 @@ public class GroupAdmin implements Sender {
 
     // Removes the characters in a substring of this sequence.
     public void delete(int start, int end) {
-        this.usb.delete(start,end);
+        this.usb.delete(start, end);
         updateAll();
     }
 
@@ -46,8 +46,8 @@ public class GroupAdmin implements Sender {
     }
 
     // Updates all registered members
-    public void updateAll(){
-        for (Member member: clients) {
+    public void updateAll() {
+        for (Member member : clients) {
             member.update(this.usb);
         }
     }
